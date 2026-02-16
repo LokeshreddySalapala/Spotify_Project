@@ -848,6 +848,30 @@
 								}
 							]
 						}
+					},
+					{
+						"name": "Alerts",
+						"type": "WebActivity",
+						"dependsOn": [
+							{
+								"activity": "ForEach1",
+								"dependencyConditions": [
+									"Succeeded",
+									"Failed"
+								]
+							}
+						],
+						"policy": {
+							"timeout": "0.12:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"headers": {}
+						}
 					}
 				],
 				"policy": {
@@ -865,26 +889,26 @@
 							},
 							{
 								"schema": "dbo",
-								"table": "DimArtist",
-								"cdc_column": "date",
-								"from_date": ""
-							},
-							{
-								"schema": "dbo",
-								"table": "DimDate",
-								"cdc_column": "updated_at",
-								"from_date": ""
-							},
-							{
-								"schema": "dbo",
 								"table": "DimTrack",
 								"cdc_column": "updated_at",
 								"from_date": ""
 							},
 							{
 								"schema": "dbo",
-								"table": "FactStream",
+								"table": "DimDate",
+								"cdc_column": "date",
+								"from_date": ""
+							},
+							{
+								"schema": "dbo",
+								"table": "DimArtist",
 								"cdc_column": "updated_at",
+								"from_date": ""
+							},
+							{
+								"schema": "dbo",
+								"table": "FactStream",
+								"cdc_column": "stream_timestamp",
 								"from_date": ""
 							}
 						]
