@@ -857,9 +857,7 @@
 								"activity": "ForEach1",
 								"dependencyConditions": [
 									"Succeeded",
-									"Failed",
-									"Completed",
-									"Skipped"
+									"Failed"
 								]
 							}
 						],
@@ -874,7 +872,7 @@
 						"typeProperties": {
 							"method": "POST",
 							"headers": {},
-							"url": "https://prod-26.centralindia.logic.azure.com:443/workflows/7c953f7d30ad4235ba78bd850ee35286/triggers/When_an_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_an_HTTP_request_is_received%2Frun&sv=1.0&sig=rXLdBE6QdBXXxuH1CFsEU5Xh47si5ARolQ6i-nAobZM",
+							"url": "https://prod-07.centralindia.logic.azure.com:443/workflows/2c253af3aa084ab687a1a5736a6b92c0/triggers/When_an_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_an_HTTP_request_is_received%2Frun&sv=1.0&sig=Zzr3B9NvqPtgMvlgSZDSHKq-Dr05f-FhX5wAE0tnrqs",
 							"body": {
 								"value": "{\n    \"pipeline_name\" : @{pipeline().Pipeline},\n    \"pipeline_runid\" : @{pipeline().RunId}\n}",
 								"type": "Expression"
