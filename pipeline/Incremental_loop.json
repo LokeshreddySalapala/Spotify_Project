@@ -333,7 +333,7 @@
 					{
 						"schema": "dbo",
 						"table": "DimArtist",
-						"cdc_column": "updated_at",
+						"cdc_column": "date",
 						"from_date": ""
 					},
 					{
