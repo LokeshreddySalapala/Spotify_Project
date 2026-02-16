@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "projectspotify"
+		},
+		"Spotify_ADLS_accountKey": {
+			"value": ""
+		},
+		"Spotify_SqlDatabase_password": {
+			"value": ""
+		},
+		"Spotify_ADLS_properties_typeProperties_url": {
+			"value": "https://spotifyproject.dfs.core.windows.net/"
+		},
+		"Spotify_SqlDatabase_properties_typeProperties_server": {
+			"value": "projectspotify.database.windows.net"
+		},
+		"Spotify_SqlDatabase_properties_typeProperties_database": {
+			"value": "spotifyproject"
+		},
+		"Spotify_SqlDatabase_properties_typeProperties_userName": {
+			"value": "Lokesh"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
